@@ -1,0 +1,1 @@
+const mobileButtonMenu=document.querySelector(".menu__toggle");mobileButtonMenu.addEventListener("click",()=>{mobileButtonMenu.classList.toggle("menu__toggle--open")});

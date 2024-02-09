@@ -1,0 +1,27 @@
+@m-width: 360px;
+@t-width: 768px;
+@d-width: 1920px;
+@2d-width: 2100px;
+
+@colorBlack: #3a3a3a;
+@colorWhite: #ffffff;
+
+:root {
+  --sectionPT:  50px;
+  --sectionPB:  0;
+  --container:  15px;
+  --paddingTop:  40px;
+  --paddingBot:  40px;
+  
+  @media (min-width: @t-width) {
+    --sectionPT:  70px;
+    --container:  24px;
+    --paddingTop:  60px;
+    --paddingBot:  60px;
+  }
+
+  @media (min-width: @d-width) {
+    --sectionPT:  110px;
+    --container:  290px;
+  }
+}

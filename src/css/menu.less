@@ -1,0 +1,26 @@
+.menu__toggle {
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.menu__toggle span {
+  display: block;
+  opacity: 1;
+  width: 20px;
+  height: 2px;
+  background-color: @colorBlack;
+  transition: .3s;
+}
+.menu__toggle--open span:first-child {
+  transform: translate(0, 8px) rotate(45deg);
+  transition: .3s;
+}
+.menu__toggle--open span:last-child {
+  transform: translate(0, -8px) rotate(-45deg);
+  transition: .3s;
+}
+.menu__toggle--open span:nth-child(2) {
+  opacity: 0;
+  transition: .3s;
+}
